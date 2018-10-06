@@ -54,4 +54,18 @@ public class AClassTest {
         assertTrue(z == w);
         //assertTrue(z.equals(w)); won't compile
     }
+
+    @Test
+    public void immutability()
+    {
+        String a = "Tim"; // all use of a string literal refer to same instance
+        String b = a;
+        assertTrue(a == b);
+        assertTrue(a.equals(b));
+        b = new String("Tim");
+        // not the same object
+        assertFalse(a == b);
+        assertTrue(a.equals(b));
+
+    }
 }
