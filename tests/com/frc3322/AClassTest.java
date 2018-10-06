@@ -40,4 +40,18 @@ public class AClassTest {
         AClass.classVal = 10;
         assertTrue(a.classVal == b.classVal);
     }
+
+    @Test
+    public void equalityAndClasses() {
+        // string is a class
+        String a = new String("Henry");
+        String b = "Henry";
+        assertFalse(a == b);
+        assertTrue(a.equals(b));
+
+        int z = 5;// primitive type
+        int w = 5;
+        assertTrue(z == w);
+        //assertTrue(z.equals(w)); won't compile
+    }
 }
