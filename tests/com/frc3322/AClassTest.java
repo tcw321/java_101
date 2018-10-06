@@ -12,4 +12,10 @@ public class AClassTest {
         assertFalse(aClass == null);
     }
 
+    @Test
+    public void publicField() {
+        AClass a = new AClass();
+        assertTrue(a.val == 1);
+    }
+
 }
