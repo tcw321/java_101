@@ -8,7 +8,7 @@ public class AClassTest {
 
     @Test
     public void createAObject() {
-        AClass aClass = null;
+        AClass aClass = new AClass();
         assertFalse(aClass == null);
     }
 
