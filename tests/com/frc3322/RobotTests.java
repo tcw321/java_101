@@ -17,6 +17,7 @@ public class RobotTests {
     public void abstractRobot()
     {
         // AbstractRobot robot = new AbstractRobot();
-        RobotFromAbstractClass robot = new RobotFromAbstractClass();
+        RobotFromAbstract robot = new RobotFromAbstract();
+        //assertTrue(robot.name.equals("Charles"));
     }
 }
