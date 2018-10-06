@@ -12,4 +12,11 @@ public class RobotTests {
         RobotFromInterface robot = new RobotFromInterface();
         assertTrue(robot.name.equals("Charles"));
     }
+
+    @Test
+    public void abstractRobot()
+    {
+        // AbstractRobot robot = new AbstractRobot();
+        RobotFromAbstractClass robot = new RobotFromAbstractClass();
+    }
 }
