@@ -20,4 +20,12 @@ public class RobotTests {
         RobotFromAbstract robot = new RobotFromAbstract();
         //assertTrue(robot.name.equals("Charles"));
     }
+
+    @Test
+    public void robotFromParent()
+    {
+        ParentRobot robot = new ParentRobot();
+        RobotFromParent robot2 = new RobotFromParent();
+
+    }
 }
