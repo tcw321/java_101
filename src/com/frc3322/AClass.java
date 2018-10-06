@@ -3,6 +3,7 @@ package com.frc3322;
 public class AClass {
     public static int classVal = 3;
     public int val = 1;
+    public final int finalVal = 10;
     private int privateVal = 2;
 
     public AClass() {}
