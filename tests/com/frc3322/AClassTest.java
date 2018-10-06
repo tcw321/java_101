@@ -18,4 +18,9 @@ public class AClassTest {
         assertTrue(a.val == 1);
     }
 
+    @Test
+    public void privateField() {
+        AClass a = new AClass();
+        assertEquals(a.getPrivateVal(), 2);
+    }
 }
