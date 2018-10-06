@@ -12,6 +12,10 @@ public class AClass {
         privateVal = i;
     }
 
+    public static void takeObject(AnotherClass b) {
+        b.setVal(11);
+    }
+
     public int getPrivateVal() {
         return privateVal;
     }
