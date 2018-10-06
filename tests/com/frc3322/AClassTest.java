@@ -86,4 +86,11 @@ public class AClassTest {
         assertTrue(a.getVal() == 11);
     }
 
+    @Test
+    public void passingToMethod()
+    {
+        AnotherClass b = new AnotherClass(10);
+        AClass.takeObject(b);
+        assertTrue(b.getVal() == 11);
+    }
 }
