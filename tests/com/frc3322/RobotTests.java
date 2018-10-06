@@ -1,6 +1,7 @@
 package com.frc3322;
 
 import org.junit.Test;
+import static org.junit.Assert.*;
 
 public class RobotTests {
 
@@ -9,5 +10,6 @@ public class RobotTests {
     {
         //InterfaceRobot robot = new InterfaceRobot();
         RobotFromInterface robot = new RobotFromInterface();
+        assertTrue(robot.name.equals("Charles"));
     }
 }
