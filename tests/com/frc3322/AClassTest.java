@@ -68,4 +68,12 @@ public class AClassTest {
         assertTrue(a.equals(b));
 
     }
+
+    @Test
+    public void finalKeyword()
+    {
+        AClass a = new AClass();
+        assertTrue(a.finalVal == 10);
+    }
+
 }
