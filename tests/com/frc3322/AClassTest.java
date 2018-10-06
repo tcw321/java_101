@@ -76,4 +76,14 @@ public class AClassTest {
         assertTrue(a.finalVal == 10);
     }
 
+    @Test
+    public void referencing()
+    {
+        AnotherClass a = new AnotherClass(10);
+        AnotherClass b = a;
+        assertTrue(a == b);
+        b.setVal(11); // b is the same object as a
+        assertTrue(a.getVal() == 11);
+    }
+
 }
