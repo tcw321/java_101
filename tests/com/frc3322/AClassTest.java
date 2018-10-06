@@ -23,4 +23,11 @@ public class AClassTest {
         AClass a = new AClass();
         assertEquals(a.getPrivateVal(), 2);
     }
+
+    @Test
+    public void constructor() {
+        AClass a = new AClass(5);
+        assertTrue(a.getPrivateVal() == 5);
+
+    }
 }
