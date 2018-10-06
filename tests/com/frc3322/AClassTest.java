@@ -30,4 +30,14 @@ public class AClassTest {
         assertTrue(a.getPrivateVal() == 5);
 
     }
+
+    @Test
+    public void classVal() {
+        AClass a = new AClass();
+        AClass b = new AClass();
+        assertTrue(a.classVal == b.classVal);
+        assertEquals(AClass.classVal, 3);
+        AClass.classVal = 10;
+        assertTrue(a.classVal == b.classVal);
+    }
 }
